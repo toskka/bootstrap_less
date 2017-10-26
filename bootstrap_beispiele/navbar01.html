@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap: Navigation</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+    
+    .pink {
+        background-color: pink;
+    }
+    .lightgreen {
+        background-color: lightgreen;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hier die Navbar -->
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <!-- Logo etc. (immer sichtbar) -->
+                <button class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#mynavbar-collapse">
+                    <span class="sr-only">Blendet Navigation ein</span>    
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a class="navbar-brand" href="#">Logo</a>   
+            </div>
+            <!-- Navigation, kann versteckt (collased) werden -->           
+            <div class="navbar-collapse collapse" id="mynavbar-collapse">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="">Navbarlink 1</a></li>
+                    <li><a href="">Navbarlink 2</a></li>
+                    <li><a href="">Navbarlink 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- .hidden versteckt etwas!   -->
+        <p class="h3 hidden visible-xs">X-Small Geräteklasse</p>
+        <h3 class="hidden visible-sm">Small Geräteklasse</h3>        
+        <h3 class="hidden visible-md">Medium Geräteklasse</h3>
+        <h3 class="hidden visible-lg">Large Geräteklasse</h3>
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1>Ich bin ein Jumbotron</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, non earum illo quaerat eaque aut!</p>
+            <p>
+                <button class="btn btn-primary">Ja</button>
+                <button class="btn btn-info">Nein</button>
+                <button class="btn btn-danger">Vielleicht</button>
+            </p>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

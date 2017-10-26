@@ -1,0 +1,120 @@
+/*******  BASE **********/
+body {
+  margin: 0;
+}
+/*******  LAYOUT **********/
+#wrapper {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+}
+#header {
+  background-color: #189a18;
+}
+#header h1 {
+  margin: 0px;
+  padding: 10px;
+}
+#footer {
+  background-color: #38e038;
+}
+#footer p {
+  margin: 0;
+  padding: 10px;
+}
+#contentwrapper {
+  border: 3px solid red;
+  display: block;
+}
+@media (min-width: 500px) {
+  #contentwrapper {
+    display: flex;
+  }
+}
+#spalte1 {
+  background-color: #bfbfbf;
+}
+@media (min-width: 500px) {
+  #spalte1 {
+    width: 20%;
+  }
+}
+#spalte2 {
+  background-color: #90bfee;
+}
+@media (min-width: 500px) {
+  #spalte2 {
+    width: 45%;
+  }
+}
+#spalte3 {
+  background-color: #b0ceb0;
+}
+@media (min-width: 500px) {
+  #spalte3 {
+    width: 35%;
+  }
+}
+.headerElement {
+  color: blue;
+}
+.texthover {
+  color: red;
+}
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.btn-default {
+  background-color: #ddd;
+  color: black;
+}
+.btn-primary {
+  background-color: #3b5998;
+  color: white;
+}
+.btn-secondary {
+  background-color: #20b2aa;
+  color: white;
+}
+.panel {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.panel-header {
+  font-weight: normal;
+  text-align: center;
+  color: blue;
+}
+.panel-header:hover {
+  color: red;
+}
+.panel-content {
+  text-align: center;
+}
+.panel-active {
+  background-color: #eee;
+}
+.l-reverse {
+  background-color: pink;
+}
+.u-active {
+  border: 2px solid red;
+}
+.is-collapsed {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.can-collapse {
+  cursor: pointer;
+}
+.js-make-collapsible {
+  /* wird nicht im Stylesheet erscheinen */
+}
+.has-sidebar {
+  width: 100%;
+}

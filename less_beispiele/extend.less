@@ -1,0 +1,28 @@
+/* Less: Demo für extend */
+
+// eine Klasse oder etwas beliebig anderes kann "extended" werden
+.textFarbe {
+    color:red;
+}
+
+.bgColor {
+    background-color:pink;
+}
+
+// ein Param-Mixin kann NICHT für Extension verwendet werden
+.test() {
+    egal:bla;
+}
+
+h1 {
+    &:extend(.textFarbe);
+    &:extend(.test); // wirkt nicht, weil Param-Mixin!
+    // .textFarbe;
+    font-weight:normal;
+}
+
+h2:extend(.bgColor) {
+   // .textFarbe;
+   &:extend(.textFarbe);
+   text-decoration:underline;
+}

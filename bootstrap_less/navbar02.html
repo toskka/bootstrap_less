@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap: Navigation</title>
+    <link rel="stylesheet" href="css/mybootstrap.css">
+</head>
+<body>
+         <!-- Hier die Navbar -->
+         <div class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Logo etc. (immer sichtbar) -->
+                    <button class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#mynavbar-collapse">
+                        <span class="sr-only">Blendet Navigation ein</span>    
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+    
+    
+                    <a class="navbar-brand" href="#">Logo</a>   
+                </div>
+                <!-- Navigation, kann versteckt (collased) werden -->           
+                <div class="navbar-collapse collapse" id="mynavbar-collapse">
+    
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Navbarlink 1</a></li>
+                        <li><a href="">Navbarlink 2</a></li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown"
+                               class="dropdown-toggle" href="">
+                                    Dropdowntoggle
+                                    <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Dropdownlink 1</a></li>
+                                <li><a href="">Dropdownlink 2</a></li>
+                                <li><a href="">Dropdownlink 3</a></li>
+                                <li><a href="">Dropdownlink 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </div>  
+
+
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Ich bin ein Jumbotron</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, non earum illo quaerat eaque aut!</p>
+            <p>
+                <button class="btn btn-primary">Ja</button>
+                <button class="btn btn-info">Nein</button>
+                <button class="btn btn-danger">Vielleicht</button>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="well">
+            <h2>Ein Well ist ein Designelement</h2>
+            <p>Für sich betrachtet nicht spannend.</p>
+        </div>
+                <!-- .hidden versteckt etwas!   -->
+                <p class="h3 hidden visible-xs">X-Small Geräteklasse</p>
+                <h3 class="hidden visible-sm">Small Geräteklasse</h3>        
+                <h3 class="hidden visible-md">Medium Geräteklasse</h3>
+                <h3 class="hidden visible-lg">Large Geräteklasse</h3>
+
+        <div class="row">
+            <div class="col-md-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quam nostrum sequi vel ducimus totam explicabo nisi nihil obcaecati eaque.</div>
+            <div class="col-md-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sunt error nemo. Error ratione molestiae et libero voluptatibus praesentium veritatis?</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam laboriosam quos illo.</div>
+            <div class="col-md-14">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero fugit dolorem cum dolor recusandae id animi, adipisci eum perferendis impedit facere molestias consectetur, tenetur optio itaque excepturi, quaerat deserunt quis atque deleniti in! Nihil!</div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

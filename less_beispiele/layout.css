@@ -1,0 +1,59 @@
+/* Less: Demo Farbfunktionen und Media Queries */
+#wrapper {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+}
+#header {
+  background-color: #189a18;
+}
+#header h1 {
+  margin: 0px;
+  padding: 10px;
+}
+#footer {
+  background-color: #38e038;
+}
+#footer p {
+  margin: 0;
+  padding: 10px;
+}
+#contentwrapper {
+  border: 3px solid red;
+  display: block;
+}
+@media (min-width: 500px) {
+  #contentwrapper {
+    display: flex;
+  }
+}
+#spalte1 {
+  background-color: #bfbfbf;
+}
+@media (min-width: 500px) {
+  #spalte1 {
+    width: 20%;
+  }
+}
+#spalte2 {
+  background-color: #90bfee;
+}
+@media (min-width: 500px) {
+  #spalte2 {
+    width: 45%;
+  }
+}
+#spalte3 {
+  background-color: #b0ceb0;
+}
+@media (min-width: 500px) {
+  #spalte3 {
+    width: 35%;
+  }
+}
+.headerElement {
+  color: blue;
+}
+.texthover {
+  color: red;
+}

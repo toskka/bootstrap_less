@@ -1,0 +1,11 @@
+/* modifiziert die BG-Farbe des Bootstrap-Wells: */
+
+.well {
+    background-color: pink;
+}
+
+/* modifiziert die BG-Farbe der Inverse-Navbar */
+
+.navbar-inverse {
+    background-color: #2055aa;
+}

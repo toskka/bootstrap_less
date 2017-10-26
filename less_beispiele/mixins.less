@@ -1,0 +1,40 @@
+/* Demo für Mixins */
+
+// eine Variable:
+@myBgColor: lightgreen;
+
+// jede Klasse kann als Mixin verwendet werden:
+.setzeBorder {
+    border:1px solid black;
+}
+
+.bgPropMixin() {
+    background-color:@myBgColor;
+}
+
+// jeder ID-Selektor kann als Mixin dienen
+#test() {
+    margin:30px;
+    text-decoration:underline;
+}
+
+
+// es gibt auch "Parameter-Mixins"
+.setzePadding() {
+    padding:5px;
+}
+// ...die auch einen Wert entgegennehmen können...
+.setzePaddingMitParam(@pad) {
+    padding:@pad;
+}
+// ...die auch einen Defaultwert haben können...
+.setzePaddingMitDefaultParam(@pad:5px) {
+    padding:@pad;
+}
+
+p {
+    .setzeBorder;
+    .bgPropMixin;
+    .setzePaddingMitDefaultParam();
+    color:black;
+}

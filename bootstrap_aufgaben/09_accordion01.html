@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel in Bootstrap</title>
+
+    <!-- IEs in den Standard-Mode zwingen ... -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <!-- für mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+    .container { border:1px solid black; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ein Pageheader  -->
+        <div>
+             <h1>Accordion</h1>
+        </div>
+        <!-- Das Accordion -->
+        <div>
+
+            <div id="panel1">
+                <div class="panel-heading">
+                    <!-- könnte auch sein: class="panel-title" -->
+                    <h4> Das ist Panel 1</h4>
+                </div>
+                <div id="panel1c">
+                    <div class="panel-body">
+                        Tolle Inhalte hier. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quaerat iure vel vero ipsam aliquid, sint aperiam perspiciatis. Vel, error!
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel2">
+                <div class="panel-heading">
+                    <h4> Das ist Panel 2</a></h4>
+                </div>
+                <!-- mit class="in" =>  Panel per Default offen!! -->
+                <div id="panel2c">
+                    <div class="panel-body">
+                        Tolle Inhalte hier. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quaerat iure vel vero ipsam aliquid, sint aperiam perspiciatis. Vel, error!
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel2">
+                <div class="panel-heading">
+                    <h4>Das ist Panel 3</h4>
+                </div>
+                <div id="panel3c">
+                    <div class="panel-body">
+                        Tolle Inhalte hier. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quaerat iure vel vero ipsam aliquid, sint aperiam perspiciatis. Vel, error!
+                    </div>
+                </div>
+            </div>
+         </div>
+        
+    </div>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

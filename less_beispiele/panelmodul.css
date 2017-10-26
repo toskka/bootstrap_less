@@ -1,0 +1,21 @@
+/* Styles für das Panelmodul */
+.panel {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.panel-header {
+  font-weight: normal;
+  text-align: center;
+  color: blue;
+}
+.panel-header:hover {
+  color: red;
+}
+.panel-content {
+  text-align: center;
+}
+.panel-active {
+  background-color: #eee;
+}

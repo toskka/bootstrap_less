@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grids in Bootstrap</title>
+
+    <!-- IEs in den Standard-Mode zwingen ... -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <!-- für mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+        .lg {
+            background-color: lightgreen;
+        }
+
+        .pi {
+            background-color: pink;
+        }
+
+        .lb {
+            background-color: lightblue;
+        }
+
+        .gr {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grids in Bootstrap</h1>
+        <h2 class="visible-lg-block">Large</h2>
+        <h2 class="visible-md-block">Medium</h2>
+        <h2 class="visible-sm-block">Small</h2>
+        <h2 class="visible-xs-block">Extra Small</h2>
+        <p class="hidden-lg">Dieser Text ist für GROSSE Displays versteckt und ANSONSTEN sichtbar!!</p>
+        <p>Sichtbarkeit: display:block; display:inline-block; display:inline;</p>
+
+        <!-- ROW -->
+        <div class="row">
+            <!-- COLUMNS -->
+
+            <!-- Spaltensichtbarkeit: 
+                    in LARGE dreispaltig
+                    in Medium und Small zweispaltig
+                    in XS einspaltig
+             -->
+
+            <div class="lb"><b>Spalte 1</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem, velit magnam! Tenetur officia quasi perferendis unde quam sit dolorum dolores reiciendis iste, voluptates quis? Ipsum ullam, quos quo neque.</div>
+            <div class="lg"><b>Spalte 2</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem, velit magnam! </div>
+            <div class="pi"><b>Spalte 3</b> Soll nur in LARGE sichtbar sein. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem, velit magnam! </div>
+        </div>
+
+        
+    </div>
+    
+ 
+</body>
+</html>

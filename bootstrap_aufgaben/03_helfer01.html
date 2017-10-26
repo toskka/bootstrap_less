@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grids in Bootstrap</title>
+
+    <!-- IEs in den Standard-Mode zwingen ... -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <!-- für mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+        .lg {
+            background-color: lightgreen;
+        }
+
+        .pi {
+            background-color: pink;
+        }
+
+        .lb {
+            background-color: lightblue;
+        }
+
+        .gr {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grids in Bootstrap: Helferklassen</h1>
+        <h2 class="visible-lg-block">Large</h2>
+        <h2 class="visible-md-block">Medium</h2>
+        <h2 class="visible-sm-block">Small</h2>
+
+        <!-- nur im Screenreader zu zeigen:  -->
+        <div class="">
+            <a href="#content">Zum Hauptinhalt</a>
+        </div>
+
+        <!-- Navigation  -->
+
+        <!-- ROW -->
+        <div class="row" id="content">
+            <!-- COLUMNS -->
+
+            <!-- Spaltenanordnung: -->
+
+            <div class="lb col-md-6"><b>1</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem, velit magnam! Tenetur officia quasi perferendis unde quam sit dolorum dolores reiciendis iste, voluptates quis? <img src="img/bild.jpg" class="pull-left">Ipsum ullam, quos quo neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos mollitia voluptatum tenetur, deleniti illum natus necessitatibus quod veniam, iure beatae accusamus! Quo quibusdam esse officia totam fugit sunt, aliquam delectus accusantium autem distinctio, ad illo deserunt sed voluptates eaque velit repellendus natus harum reiciendis aspernatur incidunt, explicabo impedit. Non, quidem.</div>
+            <div class="lg col-md-6"><b>2</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem, velit magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro facere officia veritatis mollitia, odio labore voluptatem eveniet a! <img src="img/bild2.jpg" class="pull-right">Aperiam numquam maxime necessitatibus quis, nemo, doloribus quo, placeat harum obcaecati, ad repellendus vero soluta laborum deleniti dicta nostrum minima aliquam dolores. Inventore nulla distinctio voluptatum in qui soluta consequatur facere, saepe cupiditate cum suscipit iure laboriosam eaque explicabo dolorem incidunt.</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <!-- Zentrieren  -->
+               <img src="img/bild2.jpg" class="">
+
+            </div>
+            <div class="col-md-12">
+            <!-- rechts Floaten  -->
+               <img src="img/bild2.jpg" class="">
+
+            </div>          
+        </div>
+        
+    </div>
+    
+ 
+</body>
+</html>

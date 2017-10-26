@@ -1,0 +1,29 @@
+/* Styles für das Panelmodul */
+.panel {
+    width:350px;
+    border:1px solid black;
+    border-radius:5px;
+    padding:20px;
+
+    &-header {
+        font-weight:normal;
+        text-align:center;
+        color:blue;
+
+        // lokaler Modifier
+        &:hover {
+            color:red;
+        }
+    }
+    &-content {
+        text-align:center;
+    }
+
+    // Modulmodifier hier am Ende:
+    &-active {
+        background-color:#eee;
+    }
+}
+
+
+

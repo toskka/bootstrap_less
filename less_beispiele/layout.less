@@ -1,0 +1,76 @@
+/* Less: Demo Farbfunktionen und Media Queries */
+
+// Variablen
+@primary-bgColor: lightgreen;
+
+// Gridraster 20 Spalten -> 1 Einheit ist 5%
+@grideinheit: 5%;
+
+// Funktion: functionName(arg1, arg2);
+
+@header-bgColor: darken(@primary-bgColor, 40%);
+@footer-bgColor: darken(@primary-bgColor, 20%);
+
+// Layout
+#wrapper {
+    width:100%;
+    max-width:760px;
+    margin:auto;
+}
+
+#header {
+    background-color: @header-bgColor;
+    h1 {
+        margin:0px;
+        padding:10px;
+    }
+}
+
+
+#footer {
+    background-color: @footer-bgColor;
+    p {
+        margin:0;
+        padding:10px;
+    }
+}
+
+#contentwrapper {
+    border:3px solid red;
+    display:block;
+    @media (min-width:500px) {
+        display:flex;
+    }
+}
+
+#spalte1 {
+    background-color: desaturate(@primary-bgColor, 90%);
+    @media (min-width:500px) {
+        width:20%;
+    }
+}
+
+#spalte2 {
+    background-color: spin(@primary-bgColor, 90deg);
+    @media (min-width:500px) {
+        width:45%;
+    }
+}
+
+#spalte3 {
+    background-color: desaturate(@primary-bgColor, 50%);
+    @media (min-width:500px) {
+        width:35%;
+    }
+}
+
+// <h1 class="headerElement texthover">Blau oder Rot?</h1>
+
+.headerElement {
+    color:blue;
+}
+
+
+.texthover {
+    color:red;
+}

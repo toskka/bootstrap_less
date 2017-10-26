@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel in Bootstrap</title>
+
+    <!-- IEs in den Standard-Mode zwingen ... -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <!-- für mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+             <h1>Carousel</h1>
+        </div>
+<div class="row">
+        <div class="col-xs-4"></div>
+        <div class="carousel slide col-xs-10" data-ride="carousel" id="mycarousel">
+            <!-- Indikatoren -->
+         
+            <div class="carousel-inner" >
+                     <!-- Items, die sliden -->
+                    <div class="item active">
+                        <p>1</p>
+                        <div class="carousel-caption">Das ist das erste Bild...</div>
+                     </div>
+                     <div class="item">
+                         <p>2</p>
+                     </div>
+                     <div class="item">
+                         <p>3</p>
+                     </div>
+                     <div class="item">
+                         <p>4</p>
+                     </div>
+            </div>
+            <!-- Controls -->
+            <a href="#mycarousel" class="carousel-control left"  data-slide="prev">
+               <!-- Icon für alle anderen: -->
+               <span class="glyphicon glyphicon-chevron-left"></span>
+
+               <!-- Screenreader --> 
+              <span class="sr-only">Zurück</span>  
+
+                </a>
+            <a href="#mycarousel" class="carousel-control right" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Vor</span> 
+                </a>
+        </div>
+        <div class="col-xs-4"></div>     
+       </div> 
+        
+    </div>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

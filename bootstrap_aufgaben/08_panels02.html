@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel in Bootstrap</title>
+
+    <!-- IEs in den Standard-Mode zwingen ... -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <!-- für mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+             <h1>Hier werden Panels ein- und ausgeblendet</h1>
+             <p><!-- JavaScript benötigt! -->
+                 <button class="btn btn-primary">Panel 1</button>
+                 <button class="btn btn-primary">Panel 2</button>
+             </p>
+        </div>
+
+        <div class="panel panel-default" id="panel1"><!-- ui-widget -->
+            <div class="panel-heading"><!-- ui-widget-header -->
+                <h2>Das ist Panel 1</h2>
+            </div>
+            <div class="panel-body"><!-- ui-widget-content -->
+                Tolle Inhalte hier. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quaerat iure vel vero ipsam aliquid, sint aperiam perspiciatis. Vel, error!
+            </div>
+            <div class="panel-footer"><!-- ui-widget-footer -->
+                Das ist der Footer des Panels
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="panel2">
+            <div class="panel-heading">
+                <h2>Das ist Panel 2</h2>
+            </div>
+            <div class="panel-body">
+                Tolle Inhalte hier. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quaerat iure vel vero ipsam aliquid, sint aperiam perspiciatis. Vel, error!
+            </div>
+            <div class="panel-footer">
+                Das ist der Footer des Panels
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
